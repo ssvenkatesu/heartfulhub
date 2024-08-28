@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management</title>
+    <link rel="stylesheet" href="dis.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Disaster Management<a href="index.html">Home</a></h1>
+        <li></li>
+        <div class="form-container">
+            <h2>List Required Items</h2>
+            <form id="volunteer-form">
+                <input type="text" id="item" placeholder="Item" required>
+                <input type="number" id="count" placeholder="Count" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <button type="submit">Add Item</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Donate Items</h2>
+            <form id="donor-form">
+                <input type="text" id="donor-name" placeholder="Your Name" required>
+                <input type="text" id="donate-item" placeholder="Item" required>
+                <input type="number" id="donate-count" placeholder="Count" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <button type="submit">Donate</button>
+            </form>
+        </div>
+
+        <h2>Items Needed</h2>
+        <ul id="items-list"></ul>
+    </div>
+
+    <script src="dis.js"></script>
+</body>
+</html>

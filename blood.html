@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Website</title>
+    <link rel="stylesheet" href="blood.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="nav-link">Home</a>
+        <h1>Blood Donation</h1>
+    </header>
+    <main>
+        <section id="conditions-section">
+            <h2>Who Can Donate Blood?</h2>
+            <form id="conditions-form">
+                <label><input type="checkbox" id="age" required> You are aged between 18 and 65.</label><br>
+                <label><input type="checkbox" id="weight" required> You weigh at least 50 kg.</label><br>
+                <label><input type="checkbox" id="health" required> You are in good health at the time of donation.</label><br>
+                <label><input type="checkbox" id="donation-interval" required> You have not donated blood in the last 12 weeks (for men) or 16 weeks (for women).</label><br>
+                <label><input type="checkbox" id="disease" required> You do not have any infections or diseases.</label>
+            </form>
+        </section>
+        <section id="donate-section">
+            <h2>Donate Blood</h2>
+            <form id="donate-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="blood-group">Blood Group:</label>
+                <select id="blood-group" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <label for="contact">Contact No:</label>
+                <input type="text" id="contact" required>
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+                <label for="city">City:</label>
+                <input type="text" id="city" required>
+                <button type="submit">Donate</button>
+                <button type="reset">Clear</button>
+            </form>
+        </section>
+        <section id="list-section">
+            <h2>Available Donors</h2>
+            <label for="search">Search by Blood Group:</label>
+            <input type="text" id="search" placeholder="Enter blood group">
+            <ul id="donor-list"></ul>
+        </section>
+    </main>
+    <script src="blood.js"></script>
+</body>
+</html>
